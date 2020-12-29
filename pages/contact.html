@@ -57,17 +57,13 @@
 <link href="../cdn.shopify.com/s/files/1/0437/5671/6194/t/2/assets/frame.scssf526.css?v=3971717294728970669" rel="stylesheet" type="text/css" media="all" /> 
 <link href="../cdn.shopify.com/s/files/1/0437/5671/6194/t/2/assets/home-sections.scss9211.css?v=12654800420335229906" rel="stylesheet" type="text/css" media="all" /> 
 <link href="../cdn.shopify.com/s/files/1/0437/5671/6194/t/2/assets/style5576.css?v=5169164907222966650" rel="stylesheet" type="text/css" media="all" />  
-<link href="http://cdn.shopify.com/s/files/1/0437/5671/6194/t/2/assets/slick.scss?v=10122632354879939270" rel="stylesheet" type="text/css" media="all" />
+<link href="https://cdn.shopify.com/s/files/1/0437/5671/6194/t/2/assets/slick.scss?v=10122632354879939270" rel="stylesheet" type="text/css" media="all" />
 <link href="../cdn.shopify.com/s/files/1/0437/5671/6194/t/2/assets/prettyPhotode1c.css?v=12757784511525754184" rel="stylesheet" type="text/css" media="all" />  
 <link href="../cdn.shopify.com/s/files/1/0437/5671/6194/t/2/assets/animatea14e.css?v=17046942425478865338" rel="stylesheet" type="text/css" media="all" />
 <link href="../cdn.shopify.com/s/files/1/0437/5671/6194/t/2/assets/font-all.minc83d.css?v=14597452402338798491" rel="stylesheet" type="text/css" media="all" />  
   
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:300,300italic,400,500,600,400italic,600italic,700,700italic,800,800italic">
-
-
-  <link rel="stylesheet" type="text/css"
-    href="http://fonts.googleapis.com/css?family=Montserrat:300,300italic,400,500,600,400italic,600italic,700,700italic,800,800italic">
-
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:300,300italic,400,500,600,400italic,600italic,700,700italic,800,800italic">
+<!-- 
 
   <link rel="stylesheet" type="text/css"
     href="http://fonts.googleapis.com/css?family=Montserrat:300,300italic,400,500,600,400italic,600italic,700,700italic,800,800italic">
@@ -76,7 +72,8 @@
   <link rel="stylesheet" type="text/css"
     href="http://fonts.googleapis.com/css?family=Montserrat:300,300italic,400,500,600,400italic,600italic,700,700italic,800,800italic">
 
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:300,300italic,400,500,600,400italic,600italic,700,700italic,800,800italic">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:300,300italic,400,500,600,400italic,600italic,700,700italic,800,800italic"> -->
+
   
   <script src="../code.jquery.com/jquery-3.2.1.min.js"></script>  
 <script src="../ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script> 
@@ -547,7 +544,8 @@
           </div>
           <h4>Email</h4>
           <p> 
-            <a title="" href="#">info@samceramics.com</a><br><a title="" href="#">samenterpriseskkdi@outlook.com</a>
+            <a title="" href="#">info@samceramics.com</a><br>
+            <a title="" href="#">samenterpriseskkdi@outlook.com</a>
           </p> 
           
         </div>
@@ -562,7 +560,6 @@
           <p> No 111, Kalanivasal Pudu Road Melappakam,<br /> Karaikudi - 630001.<br /></p><mark></mark> 
         </div>
       </li>
-      
     </ul>
     
   </div>
@@ -570,13 +567,14 @@
 
   <div class="contact-form-section">
     <h3> Contact Form </h3>
-    <!-- <form method="post" action="https://tileo.myshopify.com/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form"><input type="hidden" name="form_type" value="contact" /><input type="hidden" name="utf8" value="✓" /> -->
-      <form action="https://formcarry.com/s/8B1BAopqUn" method="POST" accept-charset="UTF-8" >
-        <input type="email" name="email"><!-- use this to reply visitors and prevent spam via akismet -->
-        <input type="text" name="firstName">
-        <input type="text" name="lastName">
-        <input type="text" name="anotherInput">
-        <input type="hidden" name="_gotcha"><!-- use this to prevent spam -->
+    <!-- <form method="post" action="https://tileo.myshopify.com/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form">
+      <input type="hidden" name="form_type" value="contact" /><input type="hidden" name="utf8" value="✓" /> -->
+      <form action="https://formcarry.com/s/8B1BAopqUn" id="contact_form" method="POST" accept-charset="UTF-8" class="contact-form">
+        <input type="text" id="ContactFormName" placeholder="Enter your Name" name="Name" autocapitalize="words" autocomplete="off"><!-- use this to reply visitors and prevent spam via akismet -->
+        <input type="email" id="ContactFormEmail" placeholder="Enter your Email" name="Email" autocorrect="off" autocomplete="off" autocapitalize="off" required="required">
+        <input type="number" id="ContactFormSub" placeholder="Enter your Phone Number" name="Phone Number" autocomplete="off" autocapitalize="words" required="required">
+        <textarea rows="7" type="text" id="ContactFormMessage" placeholder="Type your Message here" name="Message" autocomplete="off" autocapitalize="words"></textarea>
+        <input type="hidden" name="_gotcha">
     
     <!-- <label for="ContactFormName" class="label--hidden">Name</label>
     <input type="text" id="ContactFormName" name="contact[name]" placeholder="Name" autocapitalize="words" value="">
